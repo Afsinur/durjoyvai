@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/selectors.js"></script>
+    <script src="./js/app.js" defer></script>
+    <script src="./js/css.js" defer></script>
+  </head>
+  <body>
+    <div class="app">
+      <header class="bg-transparent d-flx flx-x x-x-jc-sb x-y-c p-30px flx-wrp">
+        <div class="d-flx flx-y">
+          <div class="hdr fs-2rem fw-800 cl-#fff">PCA-GTREM</div>
+          <div class="cl-#fff">Philippe Chiambaretta Architecte</div>
+        </div>
+
+        <div class="m-0-0-0-auto">
+          <ul class="d-flx flx-x x-x-c li-0">
+            <li class="d-flx flx-x x-y-c m-0-0-0-30px">
+              <a href="#" class="tx-n fs-1.4rem fw-600 cl-#fff">in</a>
+            </li>
+
+            <li class="d-flx flx-x x-y-c m-0-0-0-30px">
+              <a class="d-flx flx-x x-x-c x-y-c tx-n" href="#">
+                <img src="./img/letter.png" alt="letter" class="w-26px" />
+                <span class="m-0-0-0-10px fs-1.4rem fw-600 cl-#fff hideThem"
+                  >Our media</span
+                >
+              </a>
+            </li>
+
+            <li class="d-flx flx-x x-y-c m-0-0-0-30px">
+              <img src="./img/srh.png" alt="srh" />
+            </li>
+
+            <li class="d-flx flx-x x-y-c m-0-0-0-30px">
+              <img src="./img/menuBar.png" alt="menuBar" />
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="displayDiv">
+        <div class="ps-r">
+          <div class="fadeOutBlack d-flx flx-y y-y-c y-x-c h-100% w-100%">
+            <h1>BUILD</h1>
+            <p class="_p1">PCA est une agence d'architecture</p>
+
+            <p class="_p2 d-flx flx-x x-y-c">
+              <span>Discover our Projects</span>
+              <img
+                class="m-0-0px-0-10px"
+                src="./img/arrow-right.png"
+                alt="arrow-right"
+              />
+            </p>
+          </div>
+        </div>
+
+        <div class="ps-r">
+          <div class="fadeOutBlack d-flx flx-y y-y-c y-x-c h-100% w-100%">
+            <h1>THINK</h1>
+            <p class="_p1">STREAM est un laboratoire de reflexion</p>
+
+            <p class="_p2 d-flx flx-x x-y-c">
+              <span>Discover our Projects</span>
+              <img
+                class="m-0-0px-0-10px"
+                src="./img/arrow-right.png"
+                alt="arrow-right"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="respButton">
+        <div class="crs-p showThem leftDt_" onclick="runMe(this, 1)"></div>
+        <div class="crs-p showThem rightDt_" onclick="runMe(this, 2)"></div>
+      </div>
+
+      <div class="middleAnimBar"></div>
+
+      <div class="menuDiv p-15px">
+        <div class="d-flx flx-x x-x-jc-sb x-y-c w-100%">
+          <div class="cl-#fff fw-600">MENU</div>
+          <img src="./img/closeIcon.png" alt="closeBar" class="crs-p" />
+        </div>
+
+        <ul class="d-flx flx-y y-x-c m-20px-0">
+          <h2>BCP</h2>
+
+          <li>
+            <a href="#">Projects</a>
+          </li>
+        </ul>
+
+        <ul class="d-flx flx-y y-x-c m-20px-0">
+          <h2>STREAM</h2>
+
+          <li>
+            <a href="#">Articles, videos and podcasts</a>
+          </li>
+          <li>
+            <a href="#">Publications</a>
+          </li>
+        </ul>
+
+        <ul class="d-flx flx-y y-x-c m-20px-0">
+          <h2>About</h2>
+
+          <li>
+            <a href="#">Vision</a>
+          </li>
+          <li>
+            <a href="#">Philippe Chiambaretta</a>
+          </li>
+          <li>
+            <a href="#">Know how</a>
+          </li>
+          <li>
+            <a href="#">The team</a>
+          </li>
+          <li>
+            <a href="#">The place</a>
+          </li>
+        </ul>
+
+        <div class="d-flx flx-y y-x-c m-20px-0">
+          <ul class="d-flx flx-x x-x-c">
+            <li class="m-0-0-0-5px">
+              <a href="#">Contact</a>
+            </li>
+            <li class="m-0-0-0-5px">
+              <a href="#">Hurry</a>
+            </li>
+            <li class="m-0-0-0-5px">
+              <a href="#">Jobs</a>
+            </li>
+            <li class="m-0-0-0-5px">
+              <a href="#">My account</a>
+            </li>
+          </ul>
+
+          <h2 class="d-flx flx-x x-y-c m-10px-0-0-0">
+            <img src="./img/letter.png" alt="message icon" />
+            <span class="m-0-0-0-10px">Our media</span>
+          </h2>
+        </div>
+
+        <ul class="d-flx flx-x x-x-c m-20px-0">
+          <li class="m-0-0-0-10px">
+            <a href="#">
+              <img src="./img/social/facebook.png" alt="facebook" />
+            </a>
+          </li>
+          <li class="m-0-0-0-10px">
+            <a href="#">
+              <img src="./img/social/twitter.png" alt="twitter" />
+            </a>
+          </li>
+          <li class="m-0-0-0-10px">
+            <a href="#">
+              <img src="./img/social/instagram.png" alt="instagram" />
+            </a>
+          </li>
+          <li class="m-0-0-0-10px">
+            <a href="#">
+              <img src="./img/social/vimeo.png" alt="vimeo" />
+            </a>
+          </li>
+          <li class="m-0-0-0-10px">
+            <a href="#">
+              <img src="./img/social/linkedin.png" alt="linkedin" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,481 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "DM Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  background-color: #fff;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  font-weight: 600;
+  color: #fff;
+}
+
+.d-flx {
+  display: flex;
+}
+
+.flx-x {
+  flex-direction: row;
+}
+
+.flx-y {
+  flex-direction: column;
+}
+
+.x-x-jc-sb {
+  justify-content: space-between;
+}
+
+.x-x-jc-sa {
+  justify-content: space-around;
+}
+
+.x-x-s {
+  justify-content: flex-start;
+}
+
+.x-x-c {
+  justify-content: center;
+}
+
+.x-x-e {
+  justify-content: flex-end;
+}
+
+.x-y-s {
+  align-items: flex-start;
+}
+
+.x-y-c {
+  align-items: center;
+}
+
+.x-y-e {
+  align-items: flex-end;
+}
+
+.y-y-jc-sb {
+  justify-content: space-between;
+}
+
+.y-y-jc-sa {
+  justify-content: space-around;
+}
+
+.y-x-s {
+  align-items: flex-start;
+}
+
+.y-x-c {
+  align-items: center;
+}
+
+.y-x-e {
+  align-items: flex-end;
+}
+
+.y-y-s {
+  justify-content: flex-start;
+}
+
+.y-y-c {
+  justify-content: center;
+}
+
+.y-y-e {
+  justify-content: flex-end;
+}
+
+.tx-l {
+  text-align: left;
+}
+
+.tx-c {
+  text-align: center;
+}
+
+.tx-r {
+  text-align: right;
+}
+
+.ps-r {
+  position: relative;
+}
+
+.ps-a {
+  position: absolute;
+}
+
+.ps-f {
+  position: fixed;
+}
+
+.flx-1 {
+  flex: 1;
+}
+
+.li-0 {
+  list-style: none;
+}
+
+.o-flw-h {
+  overflow: hidden;
+}
+
+.o-flw-x-h {
+  overflow-x: hidden;
+}
+
+.o-flw-y-h {
+  overflow-y: hidden;
+}
+
+.active-blk {
+  background-color: #cacaca;
+}
+
+.content-c {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.tx-u {
+  text-decoration: underline;
+}
+
+.tx-n {
+  text-decoration: none;
+}
+
+.flx-wrp {
+  flex-wrap: wrap;
+}
+
+.self-s {
+  align-self: flex-start;
+}
+
+.self-c {
+  align-self: center;
+}
+
+.self-e {
+  align-self: flex-end;
+}
+
+.crs-p {
+  cursor: pointer;
+}
+
+.reArrange {
+  flex-direction: row;
+}
+
+.d-n {
+  display: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  z-index: 2;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+  transition: 1000ms ease-in-out;
+  transition-property: background-color;
+}
+
+.displayDiv {
+  position: relative;
+  height: 92vh;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: start;
+  z-index: 1;
+}
+
+.menuDiv {
+  display: flex;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  z-index: 3;
+
+  background-color: #000;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  height: 100%;
+  width: 300px;
+
+  overflow-x: hidden;
+
+  transform: translateX(100%);
+
+  transition: 150ms ease-in-out;
+  transition-property: transform;
+}
+
+.displayDiv div {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.displayDiv > div:nth-child(1) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/appBG/left.jpg");
+  background-size: auto;
+  background-position: right;
+
+  transition: all 1000ms ease-in-out;
+}
+
+.displayDiv > div:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/appBG/right.jpg");
+  background-size: auto;
+  background-position: left;
+
+  transition: all 1000ms ease-in-out;
+}
+
+.displayDiv h1 {
+  font-size: 8rem;
+  margin-bottom: 15px;
+
+  white-space: nowrap;
+}
+
+.displayDiv p._p1 {
+  position: absolute;
+  font-size: 1.4rem;
+
+  margin-top: 180px;
+
+  white-space: nowrap;
+
+  animation: fadeInP 3000ms ease-in-out forwards 1;
+}
+
+.displayDiv p._p2 {
+  position: absolute;
+  font-size: 1.4rem;
+
+  margin-top: 320px;
+
+  white-space: nowrap;
+
+  animation: fadeInP 3000ms ease-in-out forwards 1;
+}
+
+body:hover .app {
+  background-color: transparent;
+}
+
+.displayDiv > div {
+  cursor: pointer;
+}
+
+.displayDiv > div:hover p {
+  animation: fadeInP 3000ms ease-in-out forwards 1;
+}
+
+.fadeOutBlack {
+  background-color: rgba(0, 0, 0, 1);
+  transition: 1000ms ease-in-out;
+
+  transition-property: background-color;
+}
+
+.displayDiv > div:hover .fadeOutBlack {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+div.middleAnimBar {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+
+  height: 150px;
+  padding: 1px;
+  border-radius: 5px;
+
+  background-color: #fff;
+
+  transform: translate(-50%, -50%);
+  z-index: 3 !important;
+
+  animation: fadeInVerticalBar 1000ms ease-in-out forwards 1;
+}
+
+.displayDiv:hover ~ div.middleAnimBar {
+  display: none;
+}
+
+img[alt="menuBar"] {
+  cursor: pointer;
+}
+
+.menuDiv h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.menuDiv li {
+  margin: 5px 0;
+}
+
+.hideThem {
+  display: inline-block !important;
+}
+
+.showThem {
+  display: none !important;
+}
+
+.respButton {
+  display: flex;
+
+  position: fixed;
+  top: 85%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  z-index: 3 !important;
+
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 36px;
+}
+
+.respButton div {
+  padding: 6px;
+  height: 10px;
+  border-radius: 50%;
+
+  background-color: #fff;
+}
+
+.respButton div:nth-child(1) {
+  background-color: #fff;
+}
+
+.respButton div:nth-child(2) {
+  background-color: #aaa;
+}
+
+@keyframes fadeInP {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInVerticalBar {
+  0% {
+    height: 50px;
+  }
+  100% {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .menuDiv {
+    width: 100% !important;
+
+    font-size: large;
+  }
+
+  .hideThem {
+    display: none !important;
+  }
+
+  .showThem {
+    display: flex !important;
+  }
+
+  .displayDiv h1 {
+    font-size: 4rem;
+  }
+
+  .displayDiv p {
+    font-size: 1rem;
+    white-space: wrap;
+  }
+
+  .fadeOutBlack {
+    background-color: rgba(0, 0, 0, 0);
+    transition: 1000ms ease-in-out;
+
+    transition-property: background-color;
+  }
+
+  .hdr {
+    font-size: 1rem !important;
+  }
+}
